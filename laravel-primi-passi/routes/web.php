@@ -16,3 +16,13 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('home');
 });
+
+Route::get('/office', function () {
+
+$name="Andrea";
+$lname="Monti";
+$age=26;
+
+
+    return view('office', compact('name', 'lname', 'age'));
+});
