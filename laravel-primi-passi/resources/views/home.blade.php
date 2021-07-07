@@ -87,6 +87,12 @@
                 Hello Word!!
             </div>
 
+            <p>Nome: {{$name}}</p>
+            <p>Cognome: {{$lname}}</p>
+            <p>Età: {{$age}}</p>
+
+
+
 
         </div>
     </div>
