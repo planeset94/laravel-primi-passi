@@ -17,12 +17,23 @@ Route::get('/', function () {
 
 $data=[
 
+    'list'=> [
 
-            'name'=>"Andrea",
-            'lname'=>"Monti",
-            'age'=> 26
-        
+                [
+                    'name'=>"Andrea",
+                    'lname'=>"Monti",
+                    'age'=> 26
+                ],
+                [
+                    'name'=>"Marco",
+                    'lname'=>"Vita",
+                    'age'=> 29
+                ],
 
+
+            ]
+           
+    
 ];
     return view('home', $data);
 });

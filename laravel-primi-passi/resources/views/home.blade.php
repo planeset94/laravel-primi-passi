@@ -87,11 +87,18 @@
                 Hello Word!!
             </div>
 
-            <p>Nome: {{$name}}</p>
-            <p>Cognome: {{$lname}}</p>
-            <p>Età: {{$age}}</p>
 
+            <span>Nome, </span>
+            <span>Cognome</span>
+            <br>
+            <br>
+            @foreach ($list as $item)
 
+            <span>{{$item['name']}},</span>
+            <span>{{$item['lname']}}</span>
+            <br>
+            <br>
+            @endforeach
 
 
         </div>
